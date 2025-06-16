@@ -4,3 +4,4 @@ res://scenes/main.tscn
 res://scenes/player.tscn
 res://UI/movecontrole.tscn
 res://UI/rotcontrole.tscn
+res://scripts/player.gd

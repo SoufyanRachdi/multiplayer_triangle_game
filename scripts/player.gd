@@ -24,7 +24,7 @@ func _physics_process(delta: float) -> void:
 	var input_dir = move_joystick.get_normalized_vector()
 	velocity = input_dir * SPEED
 	move_and_slide()
-
+	print("test")
 	# Rotation
 	var rot_dir = rot_joystick.get_normalized_vector()
 	if rot_dir.length() > 0.1:
