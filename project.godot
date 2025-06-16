@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Triangle Game"
-run/main_scene="uid://du0gng7g7ojev"
+run/main_scene="uid://byas5n237xrc3"
 config/features=PackedStringArray("4.4", "Mobile")
 
 [input]

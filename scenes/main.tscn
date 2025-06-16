@@ -32,7 +32,7 @@ position = Vector2(2.6, 4.2)
 rotation = 3.14159
 scale = Vector2(2, 2)
 offset = Vector2(20, 20)
-zoom = Vector2(0.6, 0.6)
+zoom = Vector2(0.8, 0.8)
 position_smoothing_speed = 0.0
 
 [node name="rightside" type="StaticBody2D" parent="."]

@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://byas5n237xrc3"]
+
+[ext_resource type="Script" uid="uid://c6rrbrb4ylvk8" path="res://scripts/mainmenu.gd" id="1_iyh05"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jdfqn"]
+bg_color = Color(0.164706, 0.705882, 0.266667, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rdbus"]
+font_size = 100
+
+[sub_resource type="Theme" id="Theme_vv643"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_x5ata"]
+
+[node name="mainmenu" type="CanvasLayer"]
+script = ExtResource("1_iyh05")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jdfqn")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 176.0
+offset_top = 26.0
+offset_right = 1020.0
+offset_bottom = 303.0
+localize_numeral_system = false
+text = "triangle game
+"
+label_settings = SubResource("LabelSettings_rdbus")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+offset_left = 89.0
+offset_top = 194.0
+offset_right = 532.0
+offset_bottom = 514.0
+
+[node name="Joinserver" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_vv643")
+theme_override_font_sizes/font_size = 50
+text = "join to server"
+icon = SubResource("ViewportTexture_x5ata")
+
+[node name="BeginButton" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Ranked Mode
+"
+icon = SubResource("ViewportTexture_x5ata")
+
+[node name="Button2" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Play Counter Bots
+"
+icon = SubResource("ViewportTexture_x5ata")
+
+[node name="Button3" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Settings"
+icon = SubResource("ViewportTexture_x5ata")

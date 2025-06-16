@@ -2,3 +2,6 @@ res://scenes/player.tscn
 res://scenes/main.tscn
 res://UI/movecontrole.tscn
 res://UI/rotcontrole.tscn
+res://Interfaces/mainmenu.tscn
+res://firsttheme.tres
+res://scripts/mainmenu.gd
