@@ -1,0 +1,7 @@
+res://scenes/main.tscn
+res://scripts/player.gd
+res://scenes/player.tscn
+res://addons/virtual_joystick/scripts/virtual_joystick.gd
+res://UI/joystick.tscn
+res://UI/movecontrole.tscn
+res://UI/rotcontrole.tscn

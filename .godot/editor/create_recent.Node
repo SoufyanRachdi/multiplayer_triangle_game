@@ -1,0 +1,12 @@
+CanvasLayer
+Control
+TextureRect
+CollisionPolygon2D
+Polygon2D
+StaticBody2D
+CollisionShape2D
+Sprite2D
+TileMap
+Camera2D
+MeshInstance2D
+CharacterBody2D
