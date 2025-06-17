@@ -7,13 +7,7 @@ const ROTATION_SPEED = 3.0
 @onready var collision_polygon: CollisionPolygon2D = $CollisionPolygon2D
 
 func _ready() -> void:
-	var triangle_points = [
-		Vector2(0, -10),
-		Vector2(10, 10),
-		Vector2(-10, 10)
-	]
-	polygon_2d.polygon = triangle_points
-	collision_polygon.polygon = triangle_points
+	
 
 func _physics_process(delta: float) -> void:
 	# Movement (ZQSD)
