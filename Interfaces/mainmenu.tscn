@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://byas5n237xrc3"]
+[gd_scene load_steps=5 format=3 uid="uid://byas5n237xrc3"]
 
-[ext_resource type="Script" uid="uid://c6rrbrb4ylvk8" path="res://scripts/mainmenu.gd" id="1_iyh05"]
+[ext_resource type="Script" uid="uid://bgk40y1g4raby" path="res://Interfaces/mainmenu.gd" id="1_iyh05"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jdfqn"]
 bg_color = Color(0.164706, 0.705882, 0.266667, 1)
@@ -9,8 +9,6 @@ bg_color = Color(0.164706, 0.705882, 0.266667, 1)
 font_size = 100
 
 [sub_resource type="Theme" id="Theme_vv643"]
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_x5ata"]
 
 [node name="mainmenu" type="CanvasLayer"]
 script = ExtResource("1_iyh05")
@@ -46,24 +44,20 @@ layout_mode = 2
 theme = SubResource("Theme_vv643")
 theme_override_font_sizes/font_size = 50
 text = "join to server"
-icon = SubResource("ViewportTexture_x5ata")
 
 [node name="BeginButton" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Ranked Mode
 "
-icon = SubResource("ViewportTexture_x5ata")
 
 [node name="Button2" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Play Counter Bots
 "
-icon = SubResource("ViewportTexture_x5ata")
 
 [node name="Button3" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Settings"
-icon = SubResource("ViewportTexture_x5ata")

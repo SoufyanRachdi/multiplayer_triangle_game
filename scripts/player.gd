@@ -1,13 +1,11 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
-const ROTATION_SPEED = 3.0
-
-@onready var polygon_2d: Polygon2D = $Polygon2D
-@onready var collision_polygon: CollisionPolygon2D = $CollisionPolygon2D
-
+@onready var SPEED = 300.0
+@onready var ROTATION_SPEED = 3.0
+@onready var max_health =100
+@onready var health =100
 func _ready() -> void:
-	
+	health=max_health
 
 func _physics_process(delta: float) -> void:
 	# Movement (ZQSD)
