@@ -1,7 +1,10 @@
+res://scripts
+res://network
 res://Interfaces
+res://Interfaces/mainmenu
+res://Interfaces/playinserver
 res://scenes
 res://source
-res://scripts
 res://
 res://UI
 res://addons/virtual_joystick

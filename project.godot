@@ -11,8 +11,16 @@ config_version=5
 [application]
 
 config/name="Triangle Game"
-run/main_scene="uid://byas5n237xrc3"
+run/main_scene="uid://bx7t062xou4iu"
 config/features=PackedStringArray("4.4", "Mobile")
+
+[autoload]
+
+Networkserver="*res://network/networkserver.gd"
+
+[global_group]
+
+player=""
 
 [input]
 

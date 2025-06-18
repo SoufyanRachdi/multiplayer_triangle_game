@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cj5imwudgg28e"]
+[gd_scene load_steps=4 format=3 uid="uid://cj5imwudgg28e"]
 
 [ext_resource type="Script" uid="uid://kskaaowp4ftc" path="res://scripts/player.gd" id="1_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3vyb7"]
 size = Vector2(7, 8)
 
-[node name="player" type="CharacterBody2D"]
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_3vyb7"]
+
+[node name="player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_g2els")
 
 [node name="body" type="Polygon2D" parent="."]
@@ -28,3 +30,8 @@ position = Vector2(-9.53674e-07, -16)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="attackzone"]
 polygon = PackedVector2Array(-2, 3, 2, 3, 9.53674e-07, -4)
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_3vyb7")
+
+[connection signal="body_entered" from="attackzone" to="." method="_on_attackzone_body_entered"]

@@ -3,5 +3,10 @@ res://scenes/main.tscn
 res://UI/movecontrole.tscn
 res://UI/rotcontrole.tscn
 res://Interfaces/mainmenu.tscn
-res://Interfaces/mainmenu.gd
 res://scripts/player.gd
+res://Interfaces/mainmenu/mainmenu.tscn
+res://Interfaces/playinserver/playinserver.tscn
+res://Interfaces/mainmenu/mainmenu.gd
+res://Interfaces/playinserver/playinserver.gd
+res://network/networkserver.gd
+res://scripts/main.gd
